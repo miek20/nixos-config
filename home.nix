@@ -8,6 +8,9 @@
   home.packages = with pkgs; [
     # Менеджер версий Proton, Wine-GE, DXVK для Steam и других лаунчеров
     protonplus
+
+    # Локальная передача файлов (аналог AirDrop)
+    localsend
   ];
 
   # Настройки оболочки Bash

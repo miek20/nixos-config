@@ -24,6 +24,13 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Открытие портов для LocalSend (обмен файлами по локальной сети)
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 53317 ];
+    allowedUDPPorts = [ 53317 ];
+  };
+
   # Set your time zone.
   time.timeZone = "Europe/Moscow";
 
