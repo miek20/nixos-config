@@ -31,6 +31,13 @@
     allowedUDPPorts = [ 53317 ];
   };
 
+  # Служба mDNS / Zeroconf (Avahi для обнаружения сетевых устройств и .local)
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+
   # Set your time zone.
   time.timeZone = "Europe/Moscow";
 
