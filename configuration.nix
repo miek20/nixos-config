@@ -173,6 +173,12 @@
     options = [ "defaults" "nofail" ];
   };
 
+  # Автоматическая установка прав доступа к диску для пользователя miek
+  systemd.tmpfiles.rules = [
+    "d /mnt/data 0755 miek users -"
+    "z /mnt/data 0755 miek users -"
+  ];
+
   # -------------------------------------------------------------
   # NVIDIA GPU Configuration (GeForce GTX 1050 Ti - Pascal)
   # -------------------------------------------------------------
