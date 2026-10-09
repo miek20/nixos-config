@@ -3,6 +3,7 @@
 {
   home.username = "miek";
   home.homeDirectory = "/home/miek";
+  home.sessionPath = [ "$HOME/.local/bin" ];
 
   # Пользовательские программы
   home.packages = with pkgs; [
