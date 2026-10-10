@@ -12,6 +12,9 @@
 
     # Локальная передача файлов (аналог AirDrop)
     localsend
+
+    # Управление наушниками Huawei FreeBuds / Honor Earbuds
+    openfreebuds
   ];
 
   # Настройки оболочки Bash
