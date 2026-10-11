@@ -13,7 +13,7 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
+  boot.kernelParams = [ "intel_iommu=on" "iommu=pt" ];
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -124,12 +124,12 @@
     unzip
     parted
     e2fsprogs
-
+    pciutils
     # Текстовые редакторы
     neovim
     vim
     nano
-
+    dmidecode
     # Разработка и языки
     vscode
     python3
